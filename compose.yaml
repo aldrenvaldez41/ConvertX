@@ -19,4 +19,4 @@ services:
       - TZ=Europe/Stockholm # set your timezone, defaults to UTC
       # - UNAUTHENTICATED_USER_SHARING=true # for use with ALLOW_UNAUTHENTICATED=true to share history with all unauthenticated users / devices
     ports:
-      - 3000:3000
+      - 32794:3000
