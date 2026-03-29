@@ -233,7 +233,7 @@ export const user = new Elysia()
 
       return redirect(`${WEBROOT}/`, 302);
     },
-    { body: "signIn", cookie: "session" },
+    { body: "signIn", cookie: "optionalSession" },
   )
   .get(
     "/login",
@@ -358,7 +358,7 @@ export const user = new Elysia()
 
       return redirect(`${WEBROOT}/`, 302);
     },
-    { body: "signIn", cookie: "session" },
+    { body: "signIn", cookie: "optionalSession" },
   )
   .get("/logoff", ({ redirect, cookie: { auth } }) => {
     if (auth?.value) {
